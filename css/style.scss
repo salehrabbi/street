@@ -1,2 +1,179 @@
 $p: 'Proxima Nova Alt Rg';
 $t: 'Tiempos Headline';
+
+@import '_rem';
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+    font-family: $p;
+    padding: 0;
+    margin: 0;
+    background: #63C5C7;
+}
+button{
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.borrow-section {
+
+    color: #444444;
+    padding-top: em(67/16);
+    padding-bottom: em(72/16);
+    .container {
+        max-width: em(413/16);
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .borrow-form {
+        background: #fff;
+        padding: em(30/16);
+        box-shadow: 0 em(4/16) em(4/16) rgba(0, 0, 0, 0.13);
+        border-radius: em(18/16);
+
+        h2 {
+            font-family: $t;
+            font-size: rem(21px);
+            line-height: (25/21);
+            text-align: center;
+            margin: 0;
+            margin-bottom: em(30/21);
+        }
+
+        form {
+            label {
+                font-size: rem(11px);
+                line-height: (17/11);
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-bottom: em(2/11);
+                display: block;
+                margin-left: em(3/11);
+            }
+
+            input {
+                width: 100%;
+                padding: 0;
+                border: em(3/17) solid #EAEAEA;
+                height: em(40/17);
+                border-radius: em(7/17);
+                padding: em(5/17) em(28/17);
+                font-size: rem(17px);
+                margin-bottom: em(10/17);
+            }
+
+            button {
+                background: #63C5C7;
+                border-radius: em(33/13);
+                display: block;
+                border: none;
+                width: 100%;
+                font-size: rem(13px);
+                line-height: (16/13);
+                text-align: center;
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                padding: em(12/13) em(10/13);
+                font-weight: 700;
+            }
+
+            .icon {
+                position: absolute;
+                left: em(15/22);
+                top: em(8/22);
+                font-size: rem(22px);
+                line-height: (22/18);
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            .result {
+                text-align: center;
+                border-top: em(1/16) solid #ECECEC;
+                margin-top: em(23/16);
+                padding-top: em(15/16);
+                padding-bottom: em(14/16);
+                min-height: em(90/16);
+
+                h3 {
+                    font-size: rem(28px);
+                    line-height: (34/28);
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-weight: 700;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: rem(15px);
+                    line-height: (18/15);
+                    margin-top: em(8/15);
+                }
+            }
+        }
+    }
+}
+
+
+.form-footer {
+    text-align: center;
+
+    p {
+        font-size: rem(15px);
+        line-height: (25/15);
+        color: #FFFFFF;
+        margin: 0;
+        font-weight: 700;
+        max-width: em(382/15);
+        margin: 0 auto;
+    }
+
+    .buttons {
+        padding: em(20/16) 0 em(8/16) 0;
+        
+        .button-wraper {
+            width: 50%;
+            float: left;
+            padding: 0 em(10/16);
+            margin: em(10/16) 0;
+        }
+
+        button {
+            
+            border: em(1/11) solid #FFFFFF;
+            border-radius: em(33/11);
+            height: em(40/11);
+            background: none;
+            font-size: rem(11px);
+            line-height: (13/11);
+            text-align: center;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #fff;
+            width: 100%;
+            display: block;
+        }
+    }
+}

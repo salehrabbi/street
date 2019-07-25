@@ -11,6 +11,18 @@
 }
 
 @font-face {
+    font-family: 'Proxima Nova Alt Rg';
+    src: url('ProximaNovaA-Bold.eot');
+    src: url('ProximaNovaA-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ProximaNovaA-Bold.woff2') format('woff2'),
+        url('ProximaNovaA-Bold.woff') format('woff'),
+        url('ProximaNovaA-Bold.ttf') format('truetype'),
+        url('ProximaNovaA-Bold.svg#ProximaNovaA-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Tiempos Headline';
     src: url('TiemposHeadline-Regular.eot');
     src: url('TiemposHeadline-Regular.eot?#iefix') format('embedded-opentype'),

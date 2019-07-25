@@ -1,0 +1,153 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: "Proxima Nova Alt Rg";
+  padding: 0;
+  margin: 0;
+  background: #63C5C7;
+}
+
+button {
+  cursor: pointer;
+}
+
+.relative {
+  position: relative;
+}
+
+.borrow-section {
+  color: #444444;
+  padding-top: 4.1875em;
+  padding-bottom: 4.5em;
+}
+.borrow-section .container {
+  max-width: 25.8125em;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.borrow-section .borrow-form {
+  background: #fff;
+  padding: 1.875em;
+  -webkit-box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.13);
+          box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.13);
+  border-radius: 1.125em;
+}
+.borrow-section .borrow-form h2 {
+  font-family: "Tiempos Headline";
+  font-size: 1.3125rem;
+  line-height: 1.1904761905;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1.4285714286em;
+}
+.borrow-section .borrow-form form label {
+  font-size: 0.6875rem;
+  line-height: 1.5454545455;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0.1818181818em;
+  display: block;
+  margin-left: 0.2727272727em;
+}
+.borrow-section .borrow-form form input {
+  width: 100%;
+  padding: 0;
+  border: 0.1764705882em solid #EAEAEA;
+  height: 2.3529411765em;
+  border-radius: 0.4117647059em;
+  padding: 0.2941176471em 1.6470588235em;
+  font-size: 1.0625rem;
+  margin-bottom: 0.5882352941em;
+}
+.borrow-section .borrow-form form button {
+  background: #63C5C7;
+  border-radius: 2.5384615385em;
+  display: block;
+  border: none;
+  width: 100%;
+  font-size: 0.8125rem;
+  line-height: 1.2307692308;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 0.9230769231em 0.7692307692em;
+  font-weight: 700;
+}
+.borrow-section .borrow-form form .icon {
+  position: absolute;
+  left: 0.6818181818em;
+  top: 0.3636363636em;
+  font-size: 1.375rem;
+  line-height: 1.2222222222;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.borrow-section .borrow-form form .result {
+  text-align: center;
+  border-top: 0.0625em solid #ECECEC;
+  margin-top: 1.4375em;
+  padding-top: 0.9375em;
+  padding-bottom: 0.875em;
+  min-height: 5.625em;
+}
+.borrow-section .borrow-form form .result h3 {
+  font-size: 1.75rem;
+  line-height: 1.2142857143;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 700;
+}
+.borrow-section .borrow-form form .result p {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  margin-top: 0.5333333333em;
+}
+
+.form-footer {
+  text-align: center;
+}
+.form-footer p {
+  font-size: 0.9375rem;
+  line-height: 1.6666666667;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  max-width: 25.4666666667em;
+  margin: 0 auto;
+}
+.form-footer .buttons {
+  padding: 1.25em 0 0.5em 0;
+}
+.form-footer .buttons .button-wraper {
+  width: 50%;
+  float: left;
+  padding: 0 0.625em;
+  margin: 0.625em 0;
+}
+.form-footer .buttons button {
+  border: 0.0909090909em solid #FFFFFF;
+  border-radius: 3em;
+  height: 3.6363636364em;
+  background: none;
+  font-size: 0.6875rem;
+  line-height: 1.1818181818;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  display: block;
+}
