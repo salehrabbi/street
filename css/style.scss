@@ -14,9 +14,9 @@ $t: 'Tiempos Headline';
 }
 
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 body {
@@ -25,7 +25,8 @@ body {
     margin: 0;
     background: #63C5C7;
 }
-button{
+
+button {
     cursor: pointer;
 }
 
@@ -33,11 +34,20 @@ button{
     position: relative;
 }
 
+.clearfix:after {
+    content: "";
+    display: block;
+
+}
+
+
+
 .borrow-section {
 
     color: #444444;
     padding-top: em(67/16);
     padding-bottom: em(72/16);
+
     .container {
         max-width: em(413/16);
         margin: 0 auto;
@@ -82,21 +92,7 @@ button{
                 margin-bottom: em(10/17);
             }
 
-            button {
-                background: #63C5C7;
-                border-radius: em(33/13);
-                display: block;
-                border: none;
-                width: 100%;
-                font-size: rem(13px);
-                line-height: (16/13);
-                text-align: center;
-                letter-spacing: 0.16em;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                padding: em(12/13) em(10/13);
-                font-weight: 700;
-            }
+
 
             .icon {
                 position: absolute;
@@ -108,34 +104,52 @@ button{
                 font-weight: 700;
             }
 
-            .result {
-                text-align: center;
-                border-top: em(1/16) solid #ECECEC;
-                margin-top: em(23/16);
-                padding-top: em(15/16);
-                padding-bottom: em(14/16);
-                min-height: em(90/16);
 
-                h3 {
-                    font-size: rem(28px);
-                    line-height: (34/28);
-                    text-align: center;
-                    text-transform: uppercase;
-                    margin: 0;
-                    font-weight: 700;
-                }
-
-                p {
-                    margin: 0;
-                    font-size: rem(15px);
-                    line-height: (18/15);
-                    margin-top: em(8/15);
-                }
-            }
         }
     }
 }
 
+
+button {
+    background: #63C5C7;
+    border-radius: em(33/13);
+    display: block;
+    border: none;
+    width: 100%;
+    font-size: rem(13px);
+    line-height: (16/13);
+    text-align: center;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: em(12/13) em(10/13);
+    font-weight: 700;
+}
+
+.result {
+    text-align: center;
+    border-top: em(1/16) solid #ECECEC;
+    margin-top: em(23/16);
+    padding-top: em(15/16);
+    padding-bottom: em(14/16);
+    min-height: em(90/16);
+
+    h3 {
+        font-size: rem(28px);
+        line-height: (34/28);
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    p {
+        margin: 0;
+        font-size: rem(15px);
+        line-height: (18/15);
+        margin-top: em(8/15);
+    }
+}
 
 .form-footer {
     text-align: center;
@@ -152,7 +166,7 @@ button{
 
     .buttons {
         padding: em(20/16) 0 em(8/16) 0;
-        
+
         .button-wraper {
             width: 50%;
             float: left;
@@ -161,7 +175,7 @@ button{
         }
 
         button {
-            
+
             border: em(1/11) solid #FFFFFF;
             border-radius: em(33/11);
             height: em(40/11);
@@ -174,6 +188,123 @@ button{
             color: #fff;
             width: 100%;
             display: block;
+        }
+    }
+}
+
+
+.horz-page {
+    padding-top: 46px;
+
+    .borrow-section {
+        padding: 0;
+        padding-bottom: 46px;
+
+        .container {
+            max-width: em(980/16);
+            background: #fff;
+            padding: 0;
+            box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.13);
+            border-radius: 1.125em;
+            overflow: hidden;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .left-form {
+            width: (527/980) * 100%;
+            float: left;
+
+        }
+
+        .right-form {
+            width: 46.22%;
+            float: left;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+        }
+
+        .borrow-form {
+            background: #fff;
+            padding: 1.875em;
+            box-shadow: none;
+            border-radius: 0;
+            background: #F2F2F2;
+            padding-right: em(50/16);
+
+            form input {
+                border: none;
+            }
+
+            form {
+                .checkbox {
+                    padding: 8px 0;
+
+                    span {
+                        font-size: rem(15px);
+                        line-height: (25/15);
+                        color: #444444;
+                        float: left;
+                        width: calc(100% - 20px);
+                        padding-left: 16px;
+                    }
+
+                    input {
+                        width: auto;
+                        height: auto;
+                        margin: 0;
+                        float: left;
+                        width: 13px;
+                        margin-top: 6px;
+                    }
+                }
+            }
+
+            h2 {
+                text-align: left;
+            }
+        }
+    }
+
+    .right-form {
+        text-align: center;
+        color: #444444;
+        padding: 20px;
+
+        .result {
+            border: none;
+            margin: 0;
+            padding-top: 0;
+        }
+
+        h4 {
+            font-family: $t;
+            font-size: rem(21px);
+            line-height: (25/21);
+            margin: 0;
+        }
+
+        h3 {
+            font-size: rem(45px);
+            line-height: (54/45);
+            margin-top: em(20/45);
+            font-family: $t;
+        }
+
+        p {
+            font-size: rem(15px);
+            line-height: (25/15);
+        }
+
+        a {
+            color: #63C5C7;
+            text-decoration: none;
+        }
+
+        button {
+            max-width: 284px;
+            margin: 0 auto;
         }
     }
 }

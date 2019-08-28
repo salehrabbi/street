@@ -24,6 +24,11 @@ button {
   position: relative;
 }
 
+.clearfix:after {
+  content: "";
+  display: block;
+}
+
 .borrow-section {
   color: #444444;
   padding-top: 4.1875em;
@@ -69,7 +74,17 @@ button {
   font-size: 1.0625rem;
   margin-bottom: 0.5882352941em;
 }
-.borrow-section .borrow-form form button {
+.borrow-section .borrow-form form .icon {
+  position: absolute;
+  left: 0.6818181818em;
+  top: 0.3636363636em;
+  font-size: 1.375rem;
+  line-height: 1.2222222222;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+button {
   background: #63C5C7;
   border-radius: 2.5384615385em;
   display: block;
@@ -84,16 +99,8 @@ button {
   padding: 0.9230769231em 0.7692307692em;
   font-weight: 700;
 }
-.borrow-section .borrow-form form .icon {
-  position: absolute;
-  left: 0.6818181818em;
-  top: 0.3636363636em;
-  font-size: 1.375rem;
-  line-height: 1.2222222222;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.borrow-section .borrow-form form .result {
+
+.result {
   text-align: center;
   border-top: 0.0625em solid #ECECEC;
   margin-top: 1.4375em;
@@ -101,7 +108,7 @@ button {
   padding-bottom: 0.875em;
   min-height: 5.625em;
 }
-.borrow-section .borrow-form form .result h3 {
+.result h3 {
   font-size: 1.75rem;
   line-height: 1.2142857143;
   text-align: center;
@@ -109,7 +116,7 @@ button {
   margin: 0;
   font-weight: 700;
 }
-.borrow-section .borrow-form form .result p {
+.result p {
   margin: 0;
   font-size: 0.9375rem;
   line-height: 1.2;
@@ -150,4 +157,114 @@ button {
   color: #fff;
   width: 100%;
   display: block;
+}
+
+.horz-page {
+  padding-top: 46px;
+}
+.horz-page .borrow-section {
+  padding: 0;
+  padding-bottom: 46px;
+}
+.horz-page .borrow-section .container {
+  max-width: 61.25em;
+  background: #fff;
+  padding: 0;
+  -webkit-box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.13);
+          box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.13);
+  border-radius: 1.125em;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.horz-page .borrow-section .left-form {
+  width: 53.7755102041%;
+  float: left;
+}
+.horz-page .borrow-section .right-form {
+  width: 46.22%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.horz-page .borrow-section .borrow-form {
+  background: #fff;
+  padding: 1.875em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  background: #F2F2F2;
+  padding-right: 3.125em;
+}
+.horz-page .borrow-section .borrow-form form input {
+  border: none;
+}
+.horz-page .borrow-section .borrow-form form .checkbox {
+  padding: 8px 0;
+}
+.horz-page .borrow-section .borrow-form form .checkbox span {
+  font-size: 0.9375rem;
+  line-height: 1.6666666667;
+  color: #444444;
+  float: left;
+  width: calc(100% - 20px);
+  padding-left: 16px;
+}
+.horz-page .borrow-section .borrow-form form .checkbox input {
+  width: auto;
+  height: auto;
+  margin: 0;
+  float: left;
+  width: 13px;
+  margin-top: 6px;
+}
+.horz-page .borrow-section .borrow-form h2 {
+  text-align: left;
+}
+.horz-page .right-form {
+  text-align: center;
+  color: #444444;
+  padding: 20px;
+}
+.horz-page .right-form .result {
+  border: none;
+  margin: 0;
+  padding-top: 0;
+}
+.horz-page .right-form h4 {
+  font-family: "Tiempos Headline";
+  font-size: 1.3125rem;
+  line-height: 1.1904761905;
+  margin: 0;
+}
+.horz-page .right-form h3 {
+  font-size: 2.8125rem;
+  line-height: 1.2;
+  margin-top: 0.4444444444em;
+  font-family: "Tiempos Headline";
+}
+.horz-page .right-form p {
+  font-size: 0.9375rem;
+  line-height: 1.6666666667;
+}
+.horz-page .right-form a {
+  color: #63C5C7;
+  text-decoration: none;
+}
+.horz-page .right-form button {
+  max-width: 284px;
+  margin: 0 auto;
 }
